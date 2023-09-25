@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freehand&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="https://kit.fontawesome.com/53c8a453b7.js" crossorigin="anonymous"></script>
+
+    <style>
+         /* services part */
+*{
+    margin: 0;
+}
+
+         html{
+            width: 100%;
+            /* height: 100%; */
+            background-image: linear-gradient(#FDFDFD 0% 55%, #E5E5E5 55% );
+         }
+  #services{
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+    margin-top: 2rem;
+  }
+  .service-1{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    
+    font-size: 2rem;
+  }
+  .service-1 p span{
+font-weight: 600;
+  }
+  .service-1 img{
+    width:400px;
+    height:450px;
+  }
+  .service-2 img{
+    width:400px;
+    height:500px;
+  }
+  .service-2{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+
+  .service-2 button{
+    width: 9vw;
+    height: 7vh;
+    background-color: #E5E5E5;
+  }
+  .service-2 button:hover{
+    border: none;
+    cursor: pointer;
+    width: 9vw;
+    height: 7vh;
+    background-color: #E5E5E5;
+  }
+
+
+
+
+  main{
+  background-image: linear-gradient(#FDFDFD 0% 55%,#254F67 55% );
+  height: calc(100% - 90px);
+  
+}
+
+nav{
+    display: flex;
+    background-color: #FFFFFF;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    height: 60px;
+    /* border-bottom: 2px solid  gray; */
+}
+.left{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.right{
+    font-weight: 500;
+
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+    position: relative;
+}
+nav ul li a{
+   text-decoration: none;
+   color: black;
+}
+nav ul li a:hover{
+   text-decoration: none;
+   color: #254F67;
+}
+    li::before {
+    content: " ";
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    bottom: -8px;
+    background-color: #254F67;
+    transition: all 1s;
+}
+li:hover::before{
+width: 60px;
+}
+
+
+
+.wave{
+    display: inline-block;
+  height: 100px;
+  width: 5px;
+  margin-right: 10px;
+  background: linear-gradient(45deg, cyan, #fff);
+  animation: load 1s linear infinite;
+
+}
+
+
+@keyframes load {
+0% {
+/* invisible */
+transform: scale(0);
+}
+50% {
+/* fully visible */
+transform: scale(1);
+}
+100% {
+transform: scale(0);
+}
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: fixed;
+    z-index: 23;
+    background-color: black;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.wave:nth-child(1){
+    animation-delay: 0.1s;
+}
+.wave:nth-child(2){
+    animation-delay: 0.2s;
+}
+.wave:nth-child(3){
+    animation-delay: 0.3s;
+}
+.wave:nth-child(4){
+    animation-delay: 0.4s;
+}
+.wave:nth-child(5){
+    animation-delay: 0.5s;
+}
+.wave:nth-child(6){
+    animation-delay: 0.6s;
+}
+.wave:nth-child(7){
+    animation-delay: 0.7s;
+}
+.wave:nth-child(8){
+    animation-delay: 0.8s;
+}
+.wave:nth-child(9){
+    animation-delay: 0.9s;
+}
+.wave:nth-child(10){
+    animation-delay: 0.10s;
+}
+
+
+.footer{
+    height: 70px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 0;
+    margin-top: 14px;
+    padding-top: 0;
+}
+ 
+    </style>
+</head>
+<body>
+
+
+
+
+  <div class="container">
+    <span class="wave"></span>
+    <span class="wave"></span>
+    <span class="wave"></span>
+    <span class="wave"></span>
+    <span class="wave"></span>
+    <span class="wave"></span>
+    <span class="wave"></span>
+    <span class="wave"></span>
+    <span class="wave"></span>
+    <span class="wave"></span>
+   
+</div>
+    <header>
+        <nav>
+            <div class="left">Fatima's Portfolio</div>
+            <div class="right">
+               <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+                <li><a href="about.html">About Me</a></li>
+               </ul>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div id="services">
+            <div class="service-1">
+                <p>I am a <span>Developer</span></p>
+                <img src="service-1.jpg" alt="">
+        
+            </div>
+            <div class="service-2">
+                <img src="service-2.jpg" alt="">
+                <button>Read more</button>
+            </div>
+        </div>
+
+              </section>
+              <footer>
+                <div class="footer">
+                    <p class="Copyright"><i class="fa-regular fa-copyright " id="copyright"   style="color: white;"></i>Copyright</p>
+                    <p class="Designed">Designed by <span>Fatima</span></p>
+                  </div>
+              </footer>
+
+              <iframe style="display: none;"   width="560" height="315" src="https://www.youtube.com/embed/FKVf1E78Wb8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+              <script>
+                var loader = document.getElementsByClassName("container")[0];
+                window.addEventListener("load",function(){
+                    loader.style.display="none";
+                })
+            
+            </script>
+</body>
+</html>

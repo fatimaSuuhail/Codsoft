@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freehand&family=Poppins:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Freehand&family=Poppins:wght@400;700&family=Satisfy&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/53c8a453b7.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            display: flex;
+            background-color: #FFFFFF;
+            justify-content: space-around;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+            height: 60px;
+            position: sticky;
+            top: 0;
+            /* border-bottom: 2px solid  gray; */
+        }
+
+        .left {
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        .right {
+            font-weight: 500;
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+            position: relative;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        nav ul li a:hover {
+            text-decoration: none;
+            color: #254F67;
+        }
+
+        li::before {
+            content: " ";
+            position: absolute;
+            height: 2px;
+            width: 0%;
+            bottom: -8px;
+            background-color: #254F67;
+            transition: all 1s;
+        }
+
+        li:hover::before {
+            width: 60px;
+        }
+
+        #portfolio {
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+            justify-content: center;
+            column-gap: 1.5rem;
+            height: 100%;
+            flex-wrap: wrap;
+            margin: auto;
+            /* transform: translate(30%, 50%); */
+        }
+
+        #portfolio .item {
+            width: 30%;
+            margin-bottom: 20px;
+            height: 300px;
+            position: relative;
+            padding: 30px 30px;
+            border: 1px solid black;
+              font-family: 'Poppins', sans-serif;
+              border-radius: 10px;
+              transition: all 0.4s linear;
+            
+
+            }
+            .item:hover{
+            transform: translateY(-10px);
+
+        }
+
+        .item::before {
+            border-radius: 10px;
+            content: " ";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 0;
+            width: 100%;
+            background-color: rgb(140, 127, 127);
+            transition: all 0.6s linear;
+        }
+
+        .item:hover::before {
+            content: " ";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: rgb(140, 127, 127);
+            opacity: 0.4;
+        }
+
+        .p1 {
+            width: 100%;
+            height: 80px;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 3vw;
+            background-color: #E5E5E5;
+         padding: 4px;
+            margin: 4vw 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        .item i{
+            font-size: 1.4rem;
+        }
+        .item p{
+            margin: 10px 0;
+        }
+
+
+
+        .wave{
+    display: inline-block;
+  height: 100px;
+  width: 5px;
+  margin-right: 10px;
+  background: linear-gradient(45deg, cyan, #fff);
+  animation: load 1s linear infinite;
+
+}
+
+
+@keyframes load {
+0% {
+/* invisible */
+transform: scale(0);
+}
+50% {
+/* fully visible */
+transform: scale(1);
+}
+100% {
+transform: scale(0);
+}
+}
+
+        .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: fixed;
+    z-index: 23;
+    background-color: black;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.wave:nth-child(1){
+    animation-delay: 0.1s;
+}
+.wave:nth-child(2){
+    animation-delay: 0.2s;
+}
+.wave:nth-child(3){
+    animation-delay: 0.3s;
+}
+.wave:nth-child(4){
+    animation-delay: 0.4s;
+}
+.wave:nth-child(5){
+    animation-delay: 0.5s;
+}
+.wave:nth-child(6){
+    animation-delay: 0.6s;
+}
+.wave:nth-child(7){
+    animation-delay: 0.7s;
+}
+.wave:nth-child(8){
+    animation-delay: 0.8s;
+}
+.wave:nth-child(9){
+    animation-delay: 0.9s;
+}
+.wave:nth-child(10){
+    animation-delay: 0.10s;
+}
+ a{
+    color: black;
+    text-decoration: none;
+ }
+
+ .footer{
+    height: 70px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 0;
+    padding-top: 0;
+}
+
+
+ 
+    </style>
+</head>
+
+<body>
+    
+
+    <div class="container">
+        <span class="wave"></span>
+        <span class="wave"></span>
+        <span class="wave"></span>
+        <span class="wave"></span>
+        <span class="wave"></span>
+        <span class="wave"></span>
+        <span class="wave"></span>
+        <span class="wave"></span>
+        <span class="wave"></span>
+        <span class="wave"></span>
+       
+    </div>
+    <header>
+        <nav>
+            <div class="left">Fatima's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <p class="p1">Projects</p>
+    <section>
+        <div id="portfolio">
+            <div class="item">
+                <i class="fa-solid fa-code"></i>
+                <h2>Amazon Clone</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente ducimus vitae consectetur est
+                    voluptatum iste incidunt
+                </p>
+                <a href="">Learn More</a>
+            </div>
+            <div class="item">
+                <i class="fa-solid fa-crop"></i>
+                <h2>Shoes Website</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente ducimus vitae consectetur est
+                    voluptatum iste incidunt
+                </p>
+                <a href="">Learn More</a>
+            </div>
+            <div class="item">
+                <i class="fa-brands fa-app-store-ios"></i>
+ <h2>Spotify Clone</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente ducimus vitae consectetur est
+                    voluptatum iste incidunt
+                </p>
+                <a href="">Learn More</a>
+            </div>
+            <div class="item">
+                <i class="fa-solid fa-code"></i>
+ <h2>Portfolio</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente ducimus vitae consectetur est
+                    voluptatum iste incidunt
+                </p>
+                <a href="">Learn More</a>
+            </div>
+            <div class="item">
+                <i class="fa-solid fa-crop"></i>
+ <h2>Amazon Clone</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente ducimus vitae consectetur est
+                    voluptatum iste incidunt
+                </p>
+                <a href="">Learn More</a>
+            </div>
+            <div class="item">
+                <i class="fa-brands fa-app-store-ios"></i>
+                 <h2>Amazon Clone</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente ducimus vitae consectetur est
+                    voluptatum iste incidunt
+                </p>
+                <a href="">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <p class="Copyright"><i class="fa-regular fa-copyright " id="copyright"   style="color: white;"></i>Copyright</p>
+            <p class="Designed">Designed by <span>Fatima</span></p>
+          </div>
+      </footer>
+
+    <iframe style="display: none;"   width="560" height="315" src="https://www.youtube.com/embed/FKVf1E78Wb8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <script>
+        var loader = document.getElementsByClassName("container")[0];
+        window.addEventListener("load",function(){
+            loader.style.display="none";
+        })
+    
+
+         // Wait for the document to be ready
+    $(document).ready(function() {
+        // Select all elements with the class "item"
+        var items = document.querySelectorAll('.item');
+
+        // Loop through each item and add a click event listener
+        items.forEach(function(item) {
+            item.addEventListener('click', function() {
+                // Redirect to Google website
+                window.location.href = 'https://www.google.com/';
+            });
+        });
+    });
+    </script>
+
+
+
+
+    <script>
+    // Wait for the document to be ready
+    $(document).ready(function() {
+        // Select all elements with the class "item"
+        var items = document.querySelectorAll('.item');
+
+        // Loop through each item and add a click event listener
+        items.forEach(function(item) {
+            item.addEventListener('click', function() {
+                // Redirect to Google website
+                window.location.href = 'https://www.google.com/';
+            });
+        });
+    });
+</script>
+
+
+</body>
+
+</html>

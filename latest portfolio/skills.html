@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freehand&family=Poppins:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Freehand&family=Poppins:wght@400;700&family=Satisfy&display=swap"
+        rel="stylesheet">
+        <script src="https://kit.fontawesome.com/53c8a453b7.js" crossorigin="anonymous"></script>
+    <style>
+          * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            display: flex;
+            background-color: #FFFFFF;
+            justify-content: space-around;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+            height: 60px;
+            position: sticky;
+            top: 0;
+            /* border-bottom: 2px solid  gray; */
+        }
+
+        .left {
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        .right {
+            font-weight: 500;
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+            position: relative;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        nav ul li a:hover {
+            text-decoration: none;
+            color: #254F67;
+        }
+
+        li::before {
+            content: " ";
+            position: absolute;
+            height: 2px;
+            width: 0%;
+            bottom: -8px;
+            background-color: #254F67;
+            transition: all 1s;
+        }
+
+        li:hover::before {
+            width: 60px;
+        }
+        html{
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(#FDFDFD 0% 55%, #E5E5E5 55% );
+         }
+
+
+
+
+
+         .progress{
+  width: 910px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 34px;
+    margin-bottom: 20px;
+  }
+  
+.prog{
+  width: 451px;
+    height: 30px;
+    margin-right: 23px;
+    background-color: black;
+    position: relative;
+}
+.skills{
+  margin: 20px 450px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.skills h1{
+   
+  margin-top: 50px;
+  margin-bottom: 31px;
+text-align: center;
+font-size: 50px;
+  font-family: 'Belanosima', sans-serif;
+}
+.progress h4{
+
+  /* font-family: 'Belanosima', sans-serif; */
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+#prog1::before{
+   width: 451px;
+    height: 30px;
+    background-color: grey;
+    content: "";
+    position: absolute;
+
+
+    animation-name:harry2 ;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        animation-delay: 3s;
+}
+
+@keyframes harry2{
+  from{
+width: 0;
+height: 30px;
+  }
+  to{
+    width: 451px;
+    height: 30px;
+  }
+}
+#prog2::before{
+   width: 300px;
+    height: 30px;
+    background-color: grey;
+    content: "";
+    position: absolute;
+
+    animation-name:harry2 ;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+    animation-delay: 3s;
+}
+
+@keyframes harry2{
+  from{
+width: 0;
+height: 30px;
+  }
+  to{
+    width: 300px;
+    height: 30px;
+  }
+}
+#prog3::before{
+  width: 200px;
+  height: 30px;
+  background-color: grey;
+  content: "";
+  position: absolute;
+  
+  animation-name:harry2 ;
+  animation-duration: 2s;
+  animation-iteration-count: 3;
+  animation-delay: 3s;
+}
+@keyframes harry2{
+  from{
+width: 0;
+height: 30px;
+  }
+  to{
+    width: 200px;
+    height: 30px;
+  }
+}
+#prog4::before{
+   width: 350px;
+    height: 30px;
+    background-color: grey;
+    content: "";
+    position: absolute;
+
+    animation-name:harry2 ;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+    animation-delay: 3s;
+}
+
+
+@keyframes harry2{
+  from{
+width: 0;
+height: 30px;
+  }
+  to{
+    width: 350px;
+    height: 30px;
+  }
+}
+.progress .percentage {
+  float: right;
+  margin: 0;
+  padding-right: 23px;
+}
+.footer{
+    height: 70px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 0;
+    padding-top: 0;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Fatima's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="skills">
+
+        <h1>Skills</h1>
+        <div class="progress">
+          <div>
+            <h4>Html</h4>
+            <h4 class="percentage">100%</h4>
+            <p class="prog" id="prog1">
+            </p>
+          </div>
+          <div>
+            <h4>CSS</h6>
+              <h4 class="percentage">60%</h4>
+              <p class="prog" id="prog2"></p>
+            </div>
+            <div>
+              <h4>Javascript</h4>
+              <h4 class="percentage">40%</h4>
+              <p class="prog" id="prog3"></p>
+            </div>
+            <div>
+              <h4>C++</h4>
+              <h4 class="percentage">80%</h4>
+            <p class="prog" id="prog4"></p>
+          </div>
+        </div>
+      </div>
+  
+
+      <footer>
+        <div class="footer">
+            <p class="Copyright"><i class="fa-regular fa-copyright " id="copyright"   style="color: white;"></i>Copyright</p>
+            <p class="Designed">Designed by <span>Fatima</span></p>
+          </div>
+      </footer>
+</body>
+</html>
